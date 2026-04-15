@@ -1,4 +1,4 @@
-# Mouse Polling Rate Discrepancy on macOS Tahoe
+# Mouse Polling Rate Test for Mac: Tahoe Bug
 
 This directory contains a patched copy of `MouseRate.jar` and a minimal source fix used to make the app launch on modern macOS.
 
