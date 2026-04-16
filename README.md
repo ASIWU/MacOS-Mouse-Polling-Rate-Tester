@@ -18,6 +18,16 @@ This suggests the discrepancy may be caused by the browser / OS input-event pipe
 - `MouseRate.original.jar` — original jar before the startup fix
 - `fixsrc/cz/pscheidl/mouse/settings/Settings.java` — minimal source patch for resource loading
 
+## Usage
+
+1. Double-click `./MouseRate.jar`.
+2. If macOS blocks it, go to **System Settings > Privacy & Security** and click **Open Anyway**.
+3. Then run:
+
+```bash
+"/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home/bin/java" -jar "./MouseRate.jar"
+```
+
 ## Observed behavior
 
 ### Machine A
@@ -29,11 +39,3 @@ This suggests the discrepancy may be caused by the browser / OS input-event pipe
 - OS: `macOS Sequoia 15.7.3`
 - Browser-based tests: reported rate matches the configured mouse polling rate more closely
 
-## Usage
-
-1. Double-click `./MouseRate.jar`.
-2. If macOS blocks it, go to **System Settings > Privacy & Security** and click **Open Anyway**.
-3. Then run:
-
-```bash
-"/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home/bin/java" -jar "./MouseRate.jar"
